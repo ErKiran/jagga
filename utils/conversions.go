@@ -13,6 +13,15 @@ func HillBase(ropani float64, aana float64, paisa float64, daam float64, convert
 		Pretty("res", res)
 	}
 
+	if convertTo == INTERNATIONALSYSTEM {
+		res := InternationalSystem(totalInSqMeter)
+		Pretty("res", res)
+	}
+
+}
+
+func InternationalSystem(area float64) (result International) {
+	return International{SQUAREMETER: area, SQUAREFOOT: area / SQUAREFOOT, HECTARE: area / HECTARE, ACRE: area / ACRE}
 }
 
 func TeraiSystem(area float64) (result Terai) {

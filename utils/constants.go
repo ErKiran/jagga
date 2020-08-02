@@ -13,6 +13,13 @@ type Hill struct {
 	ROPANI float64 `json:"ropani"`
 }
 
+type International struct {
+	SQUAREMETER float64 `json:"m^2"`
+	SQUAREFOOT  float64 `json:"ft^2"`
+	HECTARE     float64 `json:"hectare"`
+	ACRE        float64 `json:"acre"`
+}
+
 const (
 	DAAM   = 1.99
 	PAISA  = 7.95
@@ -23,8 +30,9 @@ const (
 	KATHA = 338.62
 	BIGHA = 6772.41
 
-	HECTARE = 10000
-	ACRE    = 4046.86
+	HECTARE    = 10000
+	ACRE       = 4046.86
+	SQUAREFOOT = 0.092903
 
 	HILLYSYSTEM         = "HILLYSYSTEM"
 	TERAISYSTEM         = "TERAISYSTEM"

@@ -6,5 +6,5 @@ import (
 
 
 func main(){
-	 utils.HillBase(360,14,5,2,utils.TERAISYSTEM)
+	 utils.HillBase(360,14,5,2,utils.INTERNATIONALSYSTEM)
 }
